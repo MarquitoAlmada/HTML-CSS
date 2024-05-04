@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Formularios</title>
   </head>
   <body>
-    
+    <form action="" method="POST">
+      <input type="hidden" />
+
+      <input
+        type="text"
+        name="username"
+        placeholder="Ingresa el usuario"
+        required
+      />
+      <input type="password" name="password" required />
+      <input type="email" name="email" required />
+
+      <input type="number" minlength="6" max="10" />
+      <input type="tel" minlength="6" max="10" />
+
+      <input type="date" />
+      <input type="datetime" />
+      <input type="datetime-local" />
+
+      <input type="time" />
+      <input type="month" />
+      <input type="week" />
+
+      <input type="url" />
+      <input type="color" />
+
+      <input type="checkbox" />
+      <input type="radio" />
+      <input type="range" min="0" max="10" />
+
+      <input type="file" />
+      <input type="image" />
+
+      <input type="submit" value="Subir Info" />
+    </form>
   </body>
 </html>
