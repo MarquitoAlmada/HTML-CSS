@@ -8,5 +8,14 @@ p {
   /* italic, oblique(menos inclinada, en el futuro se va a poder definir que tanto de dobla, en grados) */
 
   text-align: left;
-  /* left, right, center, justify*/
+  /* left, center, right, justify(como word) */
+  text-decoration: underline;
+  /* underline, overline, line-trough, none */
+  text-transform: none;
+  /* uppercase, lowercase, capitalize, none */
+  
+  line-height: normal;
+  /* distancia entre lineas */
+  letter-spacing: normal;
+  /* distancia entre caracteres */
 }
