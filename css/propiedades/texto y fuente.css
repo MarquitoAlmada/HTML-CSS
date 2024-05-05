@@ -1,0 +1,12 @@
+p {
+  color: #f00;
+
+  font-family: "sans-serif";
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+  /* italic, oblique(menos inclinada, en el futuro se va a poder definir que tanto de dobla, en grados) */
+
+  text-align: left;
+  /* left, right, center, justify*/
+}
