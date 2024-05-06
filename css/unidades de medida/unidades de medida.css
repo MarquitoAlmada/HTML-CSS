@@ -1,0 +1,28 @@
+html {
+    font-size: 20px;
+}
+
+div {
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #ededed;
+    border-left: solid 5px #999;
+
+
+    /* Medidas Reales y Absolutas */
+    width: 10pt; /* puntos, es para impresoras, al peo */
+    width: 10cm; /* centímetros */
+    width: 10mm; /* milímetros */
+    width: 10in; /* pulgadas */
+    
+    /* Medidas Relativas */
+    width: 100%; /* se basa en el elemento padre */
+    width: 1em; /* 1em es el 100% del elemento padre */
+    font-size: 1rem; /* 1rem es el 100% del elemento raíz(html) */
+
+    /* Medidas de ViewPort(ancho y alto de toda la pantalla) */
+    height: 50vh; /* 50% de todo el alto de la pantalla */
+    width: 50vw;  /* 50% de todo el ancho de la pantalla */
+    width: 1vmax; /* es igual al mas grande entre vh y vw */
+    width: 1vmin; /* es igual al mas chico entre vh y vw */
+}
