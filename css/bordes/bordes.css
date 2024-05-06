@@ -1,0 +1,23 @@
+div {
+  margin: auto;
+  width: 150px;
+  background-color: #ddd;
+  text-align: center;
+
+  border-width: 10px;
+  border-style: solid; /* none, solid, dashed, double, groove, dotted, hidden */
+  border-color: #000;
+  /* o mas facil */
+  border: solid 10px #000;
+
+  border-top: solid 10px #f00;
+  border-right: solid 10px #0f0;
+  border-bottom: solid 10px #00f;
+  border-left: solid 10px #f0f;
+
+  /* ------------------------------ */
+
+  border-radius: 5px;
+  border-radius: 5px 10px;
+  border-radius: 20px 20px 5px 5px;
+}
