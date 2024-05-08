@@ -1,0 +1,27 @@
+body {
+    background-color: #0f0;
+}
+
+.box {
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f3e;
+    background-image: url("leclerc.jpg");
+
+    background-size: cover; /* ajusta el ancho */
+    /* contain(ajusta al 100% el ancho y alto), cover(ajusta el ancho o alto a la pantalla) */
+
+    background-position: left;
+    /* center, top, right, bottom,  left, o pixeles*/
+
+    background-repeat: no-repeat;
+    /* no-repeat, repeat, repeat-x, repeat-y */
+
+    background-attachment: fixed;
+    /* fixed, scroll(por defecto) */
+
+    /* O mas easy */
+    background: url("leclerc.jpg") top / cover fixed transparent;
+    /* IMPORTANTE: entre el background-position(top) y background-size(cover) poner una barra("/") */
+}
