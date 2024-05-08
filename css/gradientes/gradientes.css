@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#f00, #0f0);
+    background: linear-gradient(to right,#f00, #0f0);
+    background: linear-gradient(to right,#f00 80%, #0f0, #00f, #ff0);
+    background: linear-gradient(to right,#f00 80%, #0f0, #00f, #ff0);
+    
+    background: radial-gradient(#f00, #0f0);
+
+    background: conic-gradient(#f00, #0f0);
+}
