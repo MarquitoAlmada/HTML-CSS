@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEXT AREA</title>
+    <title>LABELS</title>
     <style>
       body {
+        user-select: none;
         margin: 0;
         background-color: #222;
         display: flex;
@@ -17,6 +18,7 @@
         margin-top: 50px;
         padding: 20px;
         width: 500px;
+        color: #eee;
         background-color: transparent;
         font-family: sans-serif;
         border-radius: 20px;
@@ -24,14 +26,17 @@
       }
 
       h1 {
-        color: #eee;
         text-align: center;
         cursor: default;
       }
 
+      label {
+        font-size: 18px;
+      }
+
       input,
       textarea {
-        margin: 5px;
+        margin: 5px 0 20px;
         padding: 10px;
         width: 100%;
         font-size: 20px;
@@ -60,7 +65,7 @@
         border: solid 1px #eee;
         border-radius: 5px;
         cursor: pointer;
-        transition: filter .3s ease;
+        transition: filter 0.3s ease;
       }
 
       button:hover {
@@ -74,16 +79,16 @@
         <h1>FORMULARIO DE CONTACTO</h1>
       </div>
       <div class="element-form">
-        <input type="text" placeholder="Nombre completo" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Deja tu mensaje"></textarea>
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" type="text" placeholder="Charles Leclerc" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="ejemplo@gmail.com" />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Deja tu mensaje..." ></textarea>
 
         <button type="submit">Enviar</button>
-
-        <textarea hidden readonly>Solo Lectura</textarea>
-        <textarea hidden disabled>Deshabilitado</textarea>
-        <textarea hidden minlength="1" maxlength="10">Mínimo y Máximo</textarea>
-        <textarea hidden rows="5">Minimo de 5 lineas de altura</textarea>
       </div>
     </form>
   </body>
