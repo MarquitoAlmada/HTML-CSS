@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 20px;
+    padding-top: 10px;
+    width: 300px;
+    background-color: #e2e2e2;
+    color: #444;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    
+    box-shadow: 0 0 50px 0 #0007;
+    /* x, y, difuminado, expancion, color*/
+    
+}
+
+h1 {
+    font-weight: 100;
+    text-shadow: 0 0 5px #d50;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: 0 0 5px #f00;
+    /* x, y, difuminado, color*/
+}
+
+img {
+    width: 200px;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 10px #000);
+    /* x, y, difuminado, color*/
+}

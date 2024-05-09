@@ -7,7 +7,7 @@ body {
     height: 200px;
     margin: 20px;
     background-color: #f3e;
-    background-image: url("leclerc.jpg");
+    background-image: url("../images/leclerc.jpg");
 
     background-size: cover; /* ajusta el ancho */
     /* contain(ajusta al 100% el ancho y alto), cover(ajusta el ancho o alto a la pantalla) */
@@ -22,6 +22,6 @@ body {
     /* fixed, scroll(por defecto) */
 
     /* O mas easy */
-    background: url("leclerc.jpg") top / cover fixed transparent;
+    background: url("../images/leclerc.jpg") top / cover fixed transparent;
     /* IMPORTANTE: entre el background-position(top) y background-size(cover) poner una barra("/") */
 }
