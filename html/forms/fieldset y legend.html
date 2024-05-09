@@ -14,8 +14,7 @@
       }
 
       form {
-        margin: 0;
-        margin-top: 50px;
+        margin: 10px 0;
         padding: 20px;
         width: 500px;
         color: #eee;
@@ -60,6 +59,18 @@
         background-color: #222;
       }
 
+      fieldset {
+        margin: 20px 0;
+        border: solid 1px #666;
+        border-radius: 20px;
+      }
+
+      legend {
+        padding: 0 6px;
+        color: #666;
+        font-weight: bold;
+      }
+
       button {
         margin: 5px;
         padding: 10px;
@@ -84,30 +95,41 @@
         <h1>FORMULARIO DE CONTACTO</h1>
       </div>
       <div class="element-form">
-        <label for="nombre">Nombre completo</label>
-        <input id="nombre" type="text" placeholder="Charles Leclerc" />
+        <fieldset>
+          <legend>INFORMACIÓN DE CONTACTO</legend>
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" type="text" placeholder="Charles Leclerc" />
 
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="ejemplo@gmail.com" />
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="ejemplo@gmail.com" />
+        </fieldset>
 
-        <label for="select">Categoria</label>
-        <select name="select" id="select">
-          <option value="option1">Opcion 1</option>
-          <option value="option2">Opcion 2</option>
-          <option value="option3">Opcion 3</option>
-        </select>
+        <fieldset>
+          <legend>INFORMACIÓN DE</legend>
+          <label for="select">Categoria</label>
+          <select name="select" id="select">
+            <option value="option1">Opcion 1</option>
+            <option value="option2">Opcion 2</option>
+            <option value="option3">Opcion 3</option>
+          </select>
 
-        <label for="select">Otra Cosa</label>
-        
-        <input list="otraCosa" name="select">
-        <datalist id="otraCosa">
-          <option value="con-o-sin-value">Opcion 1</option>
-          <option>Opcion 2</option>
-          <option>Opcion 3</option>
-        </datalist>
+          <label for="select">Otra Cosa</label>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" placeholder="Deja tu mensaje..."></textarea>
+          <input list="otraCosa" name="select" />
+          <datalist id="otraCosa">
+            <option value="con-o-sin-value">Opcion 1</option>
+            <option>Opcion 2</option>
+            <option>Opcion 3</option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend><label for="mensaje">Mensaje:</label></legend>
+          <textarea id="mensaje" placeholder="Deja tu mensaje..."></textarea>
+        </fieldset>
+
+        <label for="terms">Acepto los <a href="#">Terminos y Condiciones</a></label>
+        <input type="checkbox" id="terms">
 
         <button type="submit">Enviar</button>
       </div>
