@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT</title>
+    <style>
+      body {
+        user-select: none;
+        margin: 0;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+      }
+
+      form {
+        margin: 0;
+        margin-top: 50px;
+        padding: 20px;
+        width: 500px;
+        color: #eee;
+        background-color: transparent;
+        font-family: sans-serif;
+        border-radius: 20px;
+        box-shadow: 0 0 50px #fff3;
+      }
+
+      h1 {
+        text-align: center;
+        cursor: default;
+      }
+
+      label {
+        font-size: 18px;
+      }
+
+      input,
+      textarea,
+      select {
+        margin: 5px 0 20px;
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: solid 1px #eee;
+        border-radius: 5px;
+        color: #eee;
+      }
+
+      textarea {
+        font-family: sans-serif;
+        resize: vertical; /* both, vertical*/
+        min-width: 100%;
+        /* min-height: 100px; esto lo reemplazamos por rows, en las propiedades */
+        max-height: 200px;
+      }
+
+      option {
+        background-color: #222;
+      }
+
+      button {
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        color: #eee;
+        background-color: #fff1;
+        border: solid 1px #eee;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: filter 0.3s ease;
+      }
+
+      button:hover {
+        filter: brightness(80%);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="element-form">
+        <h1>FORMULARIO DE CONTACTO</h1>
+      </div>
+      <div class="element-form">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" type="text" placeholder="Charles Leclerc" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="ejemplo@gmail.com" />
+
+        <label for="select">Categoria</label>
+        <select name="select" id="select">
+          <option value="option1">Opcion 1</option>
+          <option value="option2">Opcion 2</option>
+          <option value="option3">Opcion 3</option>
+        </select>
+
+        <label for="select">Otra Cosa</label>
+        
+        <input list="otraCosa" name="select">
+        <datalist id="otraCosa">
+          <option value="con-o-sin-value">Opcion 1</option>
+          <option>Opcion 2</option>
+          <option>Opcion 3</option>
+        </datalist>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Deja tu mensaje..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
